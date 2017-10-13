@@ -2,107 +2,82 @@
 <title>Clint Myers</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Merriweather|Oxygen:700|Cabin|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Merriweather|Oxygen:700|Cabin|Roboto|Pavanam" rel="stylesheet">
 <style>
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr;
-  background-color: black;
+body {
+	background-color: black;
+	margin: 0 auto;
+  color: white;
+  font-family: 'Pavanam', sans-serif;
 }
 
-img {
-  margin: 0px 0px 0px 0px;
-  max-width: 100%;
+.left-div {
+  width: 100%;
+  height: 100%;
+  background-image: url("clint.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-h2, h3, h4, h5, h6 {
-	text-align: center;
-	font-family: 'Oxygen';
+.right-div {
+  width: 100%;
 }
 
-.text1 {
-/*
-	margin: 40px 40px 40px 40px;
-	border-color: #E4691D;
-	border-width: 10px;
-	border-style: solid;
-*/
-	padding: 40px 40px 40px 40px;
-	color: white;
+.clint-photo {
+  width: 100%;
 }
 
-h1 {
-	font-size: 72pt;
-	font-family: Cabin;
+.text-div {
+  padding: 30px 30px 30px 30px;
+  text-align: center;
 }
 
 @media screen and (min-width: 736px) {
 
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: (100vh, 100vh)
-  }
+.left-div {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+}
 
-  img {
-    position: fixed;
-    top: 0;
-    bottom: 0;
+.right-div {
+  width: 50%;
+  height: 100%;
+  float: right;
+}
 
-    max-width: 100vh;
-    margin: auto;
-    overflow: hidden;
-    z-index: 0;
-  }
+.clint-photo {
+}
 
-  .text1 {
-  	height: 100vh;
-  	z-index: 1;
-  }
 }
 
 </style>
 
 <body>
 
-  <div class="grid">
-    <div class="photo1">
-      <img src="clint.jpg">
+  <div class="main-div">
+    <div class="left-div">
+      <div class="clint-photo"></div>
     </div>
-    <div class="text1">
-      <h1>CLINT MYERS</h1>
-      <br>
-      <h3>Metallurgist, Developer, Problem Solver</h2>
-      <br>
-      <h2>Let's make something, <i><strong>together!</strong></i></h2>
-      <br>
-      <p><strong>Work</strong></p>
-      <p>Future: Seeking a position as a full time front end web developer</p>
-      <p>Present: Professional Metallurgical Engineer and Failure Analyst</p>
-      <p>Past: High School Math & Science Education</p>
-      <br>
-      <p><strong>Education</strong></p>
-      <p>BS, Metallurgical and Materials Engineering, Colorado School of Mines</p>
-      <br>
-
-
+    <div class="right-div">
+      <div class="text-div">
+        <h1>CLINT MYERS, PE</h1>
+        <h2>Let's make something, <i><strong>better.</strong></i></h2>
+        <br>
+        <p><strong>Work</strong></p>
+        <p>Future: Voracious Student of the Front End Dev Game</p>
+        <p>Present: Metallurgical Engineer @ Hurst Metallurgical</p>
+        <p>Past: Math/Science Instructor @ Early College HS (HCISD)</p>
+        <br>
+        <p><strong>Education</strong></p>
+        <p>BS, Metallurgical and Materials Engineering, Colorado School of Mines</p>
+        <br>
+        <p><strong>Endorsement</strong></p>
+        <p>"When we have a new product in the works, Clint is the first person we call for advice on material selection and testing. He helps us effectively communicate our needs to potential suppliers to make sure we can manufacture high quality, cost-effective products"</p>
+        <p>-Alejandro Moreno- Tandem Automotive</p>
+      </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-<!-- JS Scripts for Bootstrap - KEEP AT THE END OF THE BODY -->
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 </html>
